@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - ATC Agency</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/script.js"></script>
+  <style>
+    .about-section {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #e0f7fa, #ffffff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  color: #1a237e;
+}
+
+.about-section p {
+  max-width: 850px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+/* Image Box Style */
+.about-video-section {
+  position: relative;
+  width: 100%;
+  height: 500px; /* You can increase/decrease this as needed */
+  overflow: hidden;
+}
+
+.about-video-section .about-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.about-text-overlay {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  text-align: center;
+  padding: 4rem 2rem;
+  background: rgba(0, 0, 0, 0.4); /* transparent dark overlay for readability */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-text-overlay h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-text-overlay p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.about-details-section {
+  padding: 4rem 2rem;
+  background: #f4f4f4;
+  color: #333;
+}
+
+.about-block {
+  max-width: 1000px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.about-block h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #1a237e;
+}
+
+.about-block p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.service-card {
+  background: linear-gradient(to right, #2196f3, #21cbf3);
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.team-member {
+  text-align: center;
+  max-width: 200px;
+}
+
+.team-member img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3);
+}
+
+.team-member p {
+  margin-top: 0.7rem;
+  font-weight: 600;
+  color: #333;
+}
+
+
+  </style>
+</head>
+<body class="light-mode">
+  <header>
+    <nav>
+      <h1 class="logo">ATC Agency</h1>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button id="mode-toggle">🌙</button>
+    </nav>
+  </header>
+
+  <main>
+   <section class="about-video-section">
+  <video autoplay muted loop playsinline class="about-video">
+    <source src="https://v1.pinimg.com/videos/mc/720p/da/4e/f9/da4ef9309212d89c4b850e4b69823e95.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="about-text-overlay">
+    <h2>About ATC Agency</h2>
+    <p>
+      ATC Agency is a creative editing company committed to delivering top-quality,
+      pixel-perfect edits with lightning speed. Whether it’s professional documents,
+      photos, or videos — we do it all with excellence.
+    </p>
+  </div>
+</section>
+
+
+   <section class="about-details-section">
+  <div class="about-block">
+    <h3>🎯 Our Mission</h3>
+    <p>
+      To help individuals and businesses tell better stories through the power of sharp, clean, and captivating edits.
+    </p>
+  </div>
+
+  <div class="about-block">
+    <h3>💼 What We Do</h3>
+    <div class="services-grid">
+      <div class="service-card">🎬 Video Editing</div>
+      <div class="service-card">🖼️ Image Retouching</div>
+      <div class="service-card">📝 Content Proofreading</div>
+      <div class="service-card">📊 Presentation Design</div>
+      <div class="service-card">🧩 Creative Consultancy</div>
+    </div>
+  </div>
+
+  <div class="about-block">
+    <h3>👥 Meet the Team</h3>
+    <p>
+      Our team includes editors, designers, storytellers, and visual artists who work together to polish every frame, every word, and every pixel.
+    </p>
+
+    <div class="team-grid">
+      <!-- You can add team images here -->
+      <div class="team-member">
+        <img src="https://i.pinimg.com/736x/ff/8e/5f/ff8e5f5418895bb4952e7582e008af41.jpg" alt="Editor 1">
+        <p>Ananya Aditya – CEO & Founder</p>
+      </div>
+      <div class="team-member">
+        <img src="https://i.pinimg.com/736x/64/96/19/6496199c68f50373dabcf2f108a38445.jpg" alt="Designer 2">
+        <p>Tanya Sharma – HR Manager</p>
+      </div>
+
+       <div class="team-member">
+        <img src="https://i.pinimg.com/736x/bd/f5/dd/bdf5ddcb0726817f438c9150a6a12d79.jpg" alt="Designer 2">
+        <p>Tarun Gupta – Workflow Manager</p>
+      </div>
+
+       <div class="team-member">
+        <img src="" alt="Designer 2">
+        <p>Tanya Sharma – HR Manager</p>
+      </div>
+      <!-- Add more as needed -->
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ATC Agency. All rights reserved.</p>
+  </footer>
+</body>
+</html>

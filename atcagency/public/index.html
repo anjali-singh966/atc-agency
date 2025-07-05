@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ATC Agency</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/script.js"></script>
+  <style>
+    .feature-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .feature {
+      position: relative;
+      width: 300px;
+      height: 400px;
+      color: white;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+      background-size: cover;
+      background-position: center;
+      border-radius: 12px;
+      overflow: hidden;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 1rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .feature h4 {
+      margin: 0.5rem 0 0.25rem;
+      font-size: 1.3rem;
+    }
+
+    .feature p {
+      font-size: 0.95rem;
+    }
+
+    .feature::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 1;
+    }
+
+    .feature-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+    }
+      .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      padding-left: 0;
+      margin: 0;
+    }
+
+    .nav-links li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body class="light-mode">
+  <header>
+    <nav>
+      <h1 class="logo">ATC Agency</h1>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button id="mode-toggle">🌙</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <h2>Crafting Perfection Through Edits</h2>
+        <p>We are your go-to creative editing agency. From visual edits to content polishing, we bring ideas to life.</p>
+        <a class="btn" href="contact.html">Get in Touch</a>
+      </div>
+     <section class="video-preview">
+  <h3>See Our Work in Action</h3>
+  <video width="720" controls autoplay loop muted>
+    <source src="https://v1.pinimg.com/videos/mc/720p/da/4e/f9/da4ef9309212d89c4b850e4b69823e95.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</section>
+
+    </section>
+
+    <section class="features">
+      <h3>Why Choose ATC?</h3>
+      <div class="feature-grid">
+        <div class="feature" style="background-image: url('https://i.pinimg.com/736x/22/18/a0/2218a0e21bc50020e83cfc5faa405ade.jpg')">
+          <div class="feature-content">
+            <h4>✂️ Precise Editing</h4>
+            <p>We edit every detail with professional precision.</p>
+          </div>
+        </div>
+
+        <div class="feature" style="background-image: url('https://i.pinimg.com/736x/06/f2/1b/06f21be321d9596ddebf3f8b1ad2f97c.jpg')">
+          <div class="feature-content">
+            <h4>🧠 Creative Team</h4>
+            <p>Our skilled editors think outside the box.</p>
+          </div>
+        </div>
+
+        <div class="feature" style="background-image: url('https://i.pinimg.com/736x/15/39/ec/1539ecba46f961a2b20159a638498844.jpg')">
+          <div class="feature-content">
+            <h4>⏱️ Fast Delivery</h4>
+            <p>We respect your time and deliver on deadlines.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <h3>Our Work Showcase</h3>
+      <div class="gallery-grid">
+        <img src="https://i.pinimg.com/736x/ad/02/51/ad0251f6767bcef7944fa2d8bb9d5fa0.jpg" alt="Project Sample 1">
+        <img src="https://i.pinimg.com/736x/29/24/5d/29245d7c60df2aafaf1f75a060dc21f5.jpg" alt="Project Sample 2">
+        <img src="https://i.pinimg.com/736x/c0/20/15/c02015079a8819a8c3a9c3b54ed49a19.jpg" alt="Project Sample 3">
+      </div>
+    </section>
+
+    <section class="fun-section">
+      <h3>Did You Know?</h3>
+      <p id="fun-fact">Loading a fun fact...</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ATC Agency. All rights reserved.</p>
+  </footer>
+</body>
+</html>

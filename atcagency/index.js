@@ -24,7 +24,7 @@ mongoose.connect(process.env.MONGO_URI)
 
 
 // Routes
-const contactRoutes = require("./routes/Contact");
+const contactRoutes = require("./routes/contact");
 app.use("/api/messages", contactRoutes); // ✅ This matches your form
 
 
